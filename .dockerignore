@@ -9,9 +9,6 @@ Dockerfile
 node_modules
 
 mybanking/.classpath
-mybankingproject
+mybanking/.project
 mybanking/.settings*
 mybanking/target*
-
-javaagent/*/logs
-AppServerAgent*/*/logs

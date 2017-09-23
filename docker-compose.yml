@@ -1,7 +1,10 @@
 version: "2"
 services:
   app:
-    build: .
+    build:
+      context: .
+      args:
+        - APPDYNAMICS_AGENT_VERSION=4.3.5.10
     ports:
       - "8080:8080"
     env_file:
