@@ -1,0 +1,17 @@
+*/.DS_Store
+*.env
+.git
+.gitignore
+README.md
+.dockerignore
+docker-compose.yml
+Dockerfile
+node_modules
+
+mybanking/.classpath
+mybankingproject
+mybanking/.settings*
+mybanking/target*
+
+javaagent/*/logs
+AppServerAgent*/*/logs

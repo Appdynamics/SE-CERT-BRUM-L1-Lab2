@@ -1,0 +1,10 @@
+**/.DS_Store
+**/*.log
+
+**/javaagent
+**/AppServerAgent*
+**/.settings/
+**/target
+**/.classpath
+**/.project
+**/.springbeans
