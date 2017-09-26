@@ -20,22 +20,26 @@
 		});
 	});
 
-	function sendVPage(vPageName) {		
-		var href = window.location.href;
-		console.log("sendVPage: " + vPageName+", vpage: "+href+"#"+vPageName);
-		var vPageView = new ADRUM.events.VPageView({
-			url : href+"#"+vPageName
-		});
+	function sendVPage(vPageName) {
+	  var _location = [location.protocol, '//', location.host, location.pathname].join('');
 
-		vPageView.start();
+	  // Add the hash if not empty parameter
+	  if (str && str.length > 0) {
+	    _location = _location+"#"+vPageName;
+	  }
+	  //console.log("sendVPage: " + vPageName+", URL: "+_location);
 
-		vPageView.markViewChangeStart()
-		vPageView.markViewChangeEnd();
-		vPageView.markViewDOMLoaded();
-		vPageView.markXhrRequestsCompleted();
-		vPageView.end();
+	  var vPageView = new ADRUM.events.VPageView({
+	    url : _location
+	  });
 
-		ADRUM.report(vPageView);
+	  vPageView.start();
+	  vPageView.markViewChangeStart()
+	  vPageView.markViewChangeEnd();
+	  vPageView.markViewDOMLoaded();
+	  vPageView.markXhrRequestsCompleted();
+	  vPageView.end();
+	  ADRUM.report(vPageView);
 	}
 </script>
 
