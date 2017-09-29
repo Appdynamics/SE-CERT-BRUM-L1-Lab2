@@ -30,6 +30,6 @@ nohup java \
   -Dappdynamics.agent.reuse.nodeName=true \
   -Dappdynamics.agent.reuse.nodeName.prefix=MyBanking \
   -javaagent:$AGENT_DIR/javaagent.jar \
-  -jar target/mybanking-1.0.jar &
+  -jar target/mybanking-1.0.jar > /dev/null 2>&1 &
 
 exit 0
