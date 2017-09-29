@@ -29,7 +29,8 @@
 	  }
 	  //console.log("sendVPage: " + vPageName+", URL: "+_location);
 
-		if (typeof variable !== 'undefined') {
+		if (typeof ADRUM === 'undefined') {
+			console.log("ADRUM is undefined");
 			return;
 		}
 
