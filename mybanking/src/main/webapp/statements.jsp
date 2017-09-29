@@ -39,7 +39,10 @@
 	  vPageView.markViewDOMLoaded();
 	  vPageView.markXhrRequestsCompleted();
 	  vPageView.end();
-	  ADRUM.report(vPageView);
+
+		if (typeof variable !== 'undefined') {
+		  ADRUM.report(vPageView);
+		}
 	}
 </script>
 
