@@ -24,7 +24,7 @@
 	  var _location = [location.protocol, '//', location.host, location.pathname].join('');
 
 	  // Add the hash if not empty parameter
-	  if (str && str.length > 0) {
+	  if (vPageName && vPageName.length > 0) {
 	    _location = _location+"#"+vPageName;
 	  }
 	  //console.log("sendVPage: " + vPageName+", URL: "+_location);
