@@ -15,8 +15,11 @@ cd $LAB_DIR/mybanking
 echo "Building the app"
 mvn clean package
 
+echo "Killing running lab instances of $LAB_NAME"
+pkill -f $LAB_NAME
+
 echo "Starting the app"
-java \
+nohup java \
   -Dappdynamics.controller.hostName=localhost \
   -Dappdynamics.controller.port=8090 \
   -Dappdynamics.controller.ssl.enabled=false \
@@ -27,4 +30,6 @@ java \
   -Dappdynamics.agent.reuse.nodeName=true \
   -Dappdynamics.agent.reuse.nodeName.prefix=MyBanking \
   -javaagent:$AGENT_DIR/javaagent.jar \
-  -jar target/mybanking-1.0.jar
+  -jar target/mybanking-1.0.jar &
+
+exit 0
