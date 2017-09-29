@@ -29,6 +29,10 @@
 	  }
 	  //console.log("sendVPage: " + vPageName+", URL: "+_location);
 
+		if (typeof variable !== 'undefined') {
+			return;
+		}
+
 	  var vPageView = new ADRUM.events.VPageView({
 	    url : _location
 	  });
@@ -40,9 +44,8 @@
 	  vPageView.markXhrRequestsCompleted();
 	  vPageView.end();
 
-		if (typeof variable !== 'undefined') {
-		  ADRUM.report(vPageView);
-		}
+
+	  ADRUM.report(vPageView);
 	}
 </script>
 
