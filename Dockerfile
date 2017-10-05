@@ -18,7 +18,7 @@ ARG APPDYNAMICS_AGENT_VERSION
 COPY AppServerAgent-$APPDYNAMICS_AGENT_VERSION.zip /app/AppServerAgent.zip
 RUN unzip AppServerAgent.zip -d AppServerAgent && rm -f AppServerAgent.zip
 
-# Build the executable jar
+# Build the executable jar. You wouldn't want to do this in a prod setup, but this lab needs to be self-contained.
 COPY mybanking /app/mybanking
 WORKDIR mybanking
 VOLUME /root/.m2/repository
