@@ -41,4 +41,5 @@ java \
 
 ## docker-compose
 * Update the .yml to match your agent version
+* Update `appdynamics.env` with your Controller details
 * Build and start: `docker-compose up`
