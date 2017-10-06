@@ -27,19 +27,19 @@ This lab consists of an online banking app. Each page has a specific, issue with
 # Enable Auto-injection for BTs
 
 1. Follow the docs to enable auto-injection on every _possible_ BT. Connect this APM application to the EUM app that you created in Lab 1.
-  1. Why is this application be a candidate for auto-injection?
+   1. Why is this application be a candidate for auto-injection?
 2. Navigate through each page several times to drive load. View the source of the pages and verify that the JS agent has been injected.
 3. Which BTs are eligible for auto-injection?
 4. Why are the /api/ BTs not in the list of auto-injection candidates?
-  1. How can you verify this in DevTools?
+   1. How can you verify this in DevTools?
 5. Insert a screenshot of the BT and Pages &amp; Ajax pages from the Controller.
 
 # Home Page
 
 1. The /api/... ajax calls need to be refined because they're not specific enough. Create a set of custom naming rules to bring these ajax calls under control. In the end, you should have **19 distinct ajax calls** for the /api/... path.
 2. Use the UI to exclude the ajax calls to the Typicode domain.
-  1. How did you accomplish this?
-  2. What other options do you have for excluding calls?
+   1. How did you accomplish this?
+   2. What other options do you have for excluding calls?
 3. Use DevTools to inspect the Beacon's event types. What kind of events you see? How did you verify this?
 
 # Activity Page
@@ -65,8 +65,8 @@ This lab consists of an online banking app. Each page has a specific, issue with
 5. What would happen to BRUM metrics if this page embedded another domain like nasdaq.com?
 6. The page element on the right side seems to be presenting specific stock information. What BT does this element correspond to?
 7. Is this BT a candidate for auto-injection?
-  1. Why or why not?
-  2. How can you verify this in DevTools?
+   1. Why or why not?
+   2. How can you verify this in DevTools?
 
 # Statements Page
 
@@ -77,9 +77,9 @@ This lab consists of an online banking app. Each page has a specific, issue with
 # Order New Card Page
 
 1. This page is based on Angular JS 1.x. What support does BRUM have for this SPA framework?
-  1. Explain how BRUM is monitoring this page without having to make any manual changes.
+   1. Explain how BRUM is monitoring this page without having to make any manual changes.
 2. Navigate several times through each step of the Order New Card process.
-  1. Stop navigating back on the "Select Your Missing Card" page to allow your auto-refresh to generate load for that page.
+   1. Stop navigating back on the "Select Your Missing Card" page to allow your auto-refresh to generate load for that page.
 3. How are the metrics in BRUM for the Order New Card workflow different than for the other pages in this app?
 4. What kinds of new data has appeared in BRUM?
 5. What kind(s) of performance problems does the "Select Your Missing Card" page page exhibit?
