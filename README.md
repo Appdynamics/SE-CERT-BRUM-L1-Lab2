@@ -1,7 +1,19 @@
+- [Summary](#summary)
+- [Lab Manual](#lab-manual)
+- [Usage](#usage)
+	- [java](#java)
+	- [docker](#docker)
+	- [docker-compose](#docker-compose)
+
 # Summary
 Simple application to illustrate the usage of and troubleshooting with AppDynamics Browser RUM.
 
 There are performance problems built into this app so that someone can learn to use BRUM.
+
+# Lab Manual
+Follow this lab manual. Copy the text into a Doc for recording your responses to the lab questions.
+
+**[Lab Manual](LAB_MANUAL.md)**
 
 # Usage
 * Download a zip file for the Sun/JRocket java agent and place the .zip in this directory.
