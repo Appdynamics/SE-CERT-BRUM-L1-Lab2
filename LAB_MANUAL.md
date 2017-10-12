@@ -8,7 +8,7 @@
 - [Statements Page](#statements-page)
 - [Order New Card Page](#order-new-card-page)
 
-# Introduction
+# 1) Introduction
 
 This lab will guide you through several BRUM use cases and troubleshooting scenarios.
 
@@ -16,7 +16,7 @@ Follow this lab manual with the accompanying application. Copy this lab manual t
 
 If you get stuck, make sure that you have a good config in the Controller and successful Beacons being sent. DevTools will be your best friend along the way so make sure that you are comfortable with the capabilities.
 
-# Getting Started
+# 2) Getting Started
 
 This lab consists of an online banking app. Each page has a specific, issue with the performance or how the page interacts with BRUM.
 
@@ -24,7 +24,7 @@ This lab consists of an online banking app. Each page has a specific, issue with
 1. Enable an auto-refresh extension in your browser to refresh the current page every 30 seconds. Keep your auto-refresh extension going on every page to drive traffic. You can turn it off if you'd like to inspect the page, but remember to turn it back on again.(The auto-refresh extension is an excellent way to drive traffic in real-world applications. Even if you have a load test script, this approach is nice because you control the traffic.)
 2. Open the Lab 2 app at **http://YOUR_VM_URL:8080**
 
-# Enable Auto-injection for BTs
+# 3) Enable Auto-injection for BTs
 
 1. Follow the docs to enable auto-injection on every _possible_ BT. Connect this APM application to the EUM app that you created in Lab 1.
    1. Why is this application be a candidate for auto-injection?
@@ -34,7 +34,7 @@ This lab consists of an online banking app. Each page has a specific, issue with
    1. How can you verify this in DevTools?
 5. Insert a screenshot of the BT and Pages &amp; Ajax pages from the Controller.
 
-# Home Page
+# 4) Home Page
 
 1. The /api/... ajax calls need to be refined because they're not specific enough. Create a set of custom naming rules to bring these ajax calls under control. In the end, you should have **19 distinct ajax calls** for the /api/... path.
 2. Use the UI to exclude the ajax calls to the Typicode domain.
@@ -42,21 +42,21 @@ This lab consists of an online banking app. Each page has a specific, issue with
    2. What other options do you have for excluding calls?
 3. Use DevTools to inspect the Beacon's event types. What kind of events you see? How did you verify this?
 
-# Activity Page
+# 5) Activity Page
 
 1. What kind(s) of performance problems does this page exhibit?
 2. How can you verify this with BRUM? Is there any other AppDynamics data that may help?
 3. Describe how this impacts the Critical Rendering Path?
 4. What do you see in DevTools?
 
-# Pay Bills Page
+# 6) Pay Bills Page
 
 1. What kind(s) of performance problems does this page exhibit?
 2. How can you verify this with BRUM? Is there any other AppDynamics data that may help?
 3. Describe how this impacts the Critical Rendering Path?
 4. What do you see in DevTools?
 
-# Stocks Page
+# 7) Stocks Page
 
 1. What's unique about how this page is constructed? Use DevTools to verify this.
 2. Click on the links for the different stock symbols. What does BRUM report about your navigation activities?
@@ -68,13 +68,13 @@ This lab consists of an online banking app. Each page has a specific, issue with
    1. Why or why not?
    2. How can you verify this in DevTools?
 
-# Statements Page
+# 8) Statements Page
 
 1. Click onto each of the tabs several times. What data do you see in BRUM?
 2. Inspect the source code. Explain how this new data is getting to BRUM.
 3. Use DevTools to inspect the Beacon's event types. What kind of events you see? How did you verify this?
 
-# Order New Card Page
+# 9) Order New Card Page
 
 1. This page is based on Angular JS 1.x. What support does BRUM have for this SPA framework?
    1. Explain how BRUM is monitoring this page without having to make any manual changes.
