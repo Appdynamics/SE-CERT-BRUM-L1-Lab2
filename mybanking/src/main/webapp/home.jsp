@@ -7,7 +7,7 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 <link href="/favicon.ico" rel="shortcut icon" />
-<title>Name - APDY Bank</title>
+<title>Home - APDY Bank</title>
 
 <jsp:include page="partials/resources.jsp" />
 

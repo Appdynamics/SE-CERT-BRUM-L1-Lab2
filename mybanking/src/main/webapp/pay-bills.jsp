@@ -10,7 +10,7 @@
 <title>Pay Bills - APDY Bank</title>
 
 <jsp:include page="partials/resources.jsp" />
-<link rel="stylesheet" href="/resources/bills-style.css" />
+<link rel="stylesheet" href="/resources/bills-style.css?v=${cacheBuster}" />
 
 </head>
 <body>

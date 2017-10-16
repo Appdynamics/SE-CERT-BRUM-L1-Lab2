@@ -13,6 +13,7 @@ public class PayBillsController {
 	@RequestMapping("/pay-bills")
 	public String index(Map<String, Object> model) {
 		model.put("pageName", "Pay My Bills");
+		model.put("cacheBuster", System.currentTimeMillis());
 		
 		ProcessingUtil.process(1000, 2000);
 		
