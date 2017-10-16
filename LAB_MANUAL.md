@@ -20,9 +20,9 @@ If you get stuck, make sure that you have a good config in the Controller and su
 
 This lab consists of an online banking app. Each page has a specific, issue with the performance or how the page interacts with BRUM.
 
-1. Start the lab with your chosed method in the [README](README.md)
+1. Start the lab with your chosen method in the [README](README.md)
 1. Enable an auto-refresh extension in your browser to refresh the current page every 30 seconds. Keep your auto-refresh extension going on every page to drive traffic. You can turn it off if you'd like to inspect the page, but remember to turn it back on again.(The auto-refresh extension is an excellent way to drive traffic in real-world applications. Even if you have a load test script, this approach is nice because you control the traffic.)
-2. Open the Lab 2 app at **http://YOUR_VM_URL:8080**
+2. Open the Lab 2 app at **http://YourVMURL:8080**
 
 # 3) Enable Auto-injection for BTs
 
@@ -30,13 +30,16 @@ This lab consists of an online banking app. Each page has a specific, issue with
    1. Why is this application be a candidate for auto-injection?
 2. Navigate through each page several times to drive load. View the source of the pages and verify that the JS agent has been injected.
 3. Which BTs are eligible for auto-injection?
+   1. Make sure that you have a total of 8 BTs auto-injecting the JS agent before you continue.
+   1. Why did some BTs appear as auto-injection candidates before others?
+   1. Why is there a delay between enabling auto-injection and seeing the JS agent on the page?
 4. Why are the /api/ BTs not in the list of auto-injection candidates?
    1. How can you verify this in DevTools?
 5. Insert a screenshot of the BT and Pages &amp; Ajax pages from the Controller.
 
 # 4) Home Page
 
-1. The /api/... ajax calls need to be refined because they're not specific enough. Create a set of custom naming rules to bring these ajax calls under control. In the end, you should have **19 distinct ajax calls** for the /api/... path.
+1. The /api/... ajax calls need to be refined because they're not specific enough. Create a set of custom naming rules to bring these ajax calls under control. In the end, you should have **19 distinct ajax calls** for the /api/... path. (Hint: Regex will be helpful here but don't limit yourself to that.)
 2. Use the UI to exclude the ajax calls to the Typicode domain.
    1. How did you accomplish this?
    2. What other options do you have for excluding calls?
