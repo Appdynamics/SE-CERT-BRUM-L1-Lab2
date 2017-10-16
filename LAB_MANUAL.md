@@ -85,6 +85,6 @@ This lab consists of an online banking app. Each page has a specific, issue with
    1. Stop navigating back on the "Select Your Missing Card" page to allow your auto-refresh to generate load for that page.
 3. How are the metrics in BRUM for the Order New Card workflow different than for the other pages in this app?
 4. What kinds of new data has appeared in BRUM?
-5. What kind(s) of performance problems does the "Select Your Missing Card" page page exhibit?
+5. What kind(s) of performance problems does the "Select Your Missing Card" page exhibit?
 6. Examine a snapshot for "Select Your Missing Card". What factors contribute to the End User Response time (EURT)?
 7. Describe how BRUM calculates the EURT for this page.
