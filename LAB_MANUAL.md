@@ -30,7 +30,7 @@ This lab consists of an online banking app. Each page has a specific, issue with
    1. Why is this application be a candidate for auto-injection?
 2. Navigate through each page several times to drive load. View the source of the pages and verify that the JS agent has been injected.
 3. Which BTs are eligible for auto-injection?
-   1. Make sure that you have a total of 8 BTs auto-injecting the JS agent before you continue.
+   1. Make sure that you have a total of 8 BTs auto-injecting the JS agent before you continue. Hint: the Stocks page has more than 1 BT.
    1. Why did some BTs appear as auto-injection candidates before others?
    1. Why is there a delay between enabling auto-injection and seeing the JS agent on the page?
 4. Why are the /api/ BTs not in the list of auto-injection candidates?
