@@ -20,7 +20,7 @@ If you get stuck, make sure that you have a good config in the Controller and su
 
 This lab consists of an online banking app. Each page has a specific, issue with the performance or how the page interacts with BRUM.
 
-1. Start the lab with your chosen method in the [README](README.md)
+1. If using the Ravello VM, then your app will automatically start. Otherwise, start the lab with your chosen method in the [README](README.md).
 1. Enable an auto-refresh extension in your browser to refresh the current page every 30 seconds. Keep your auto-refresh extension going on every page to drive traffic. You can turn it off if you'd like to inspect the page, but remember to turn it back on again.(The auto-refresh extension is an excellent way to drive traffic in real-world applications. Even if you have a load test script, this approach is nice because you control the traffic.)
 2. Open the Lab 2 app at **http://YourVMURL:8080**
 
