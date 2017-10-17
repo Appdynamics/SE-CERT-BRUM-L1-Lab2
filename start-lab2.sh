@@ -12,11 +12,11 @@ git pull
 
 cd $LAB_DIR/mybanking
 
-echo "Building the app"
-mvn clean package
-
 echo "Killing running lab instances of $LAB_NAME"
 pkill -f "mybanking/target/mybanking-1.0.jar"
+
+echo "Building the app"
+mvn clean package
 
 echo "Starting the app"
 nohup java \
